@@ -1,7 +1,7 @@
 {
   "cli": {
     "version": ">= 3.0.0",
-    "appVersionSource": "auto"
+    "appVersionSource": "local"
   },
   "build": {
     "preview": {
@@ -11,7 +11,7 @@
         "buildType": "apk"
       },
       "env": {
-        "GOOGLE_SERVICES_JSON": "GOOGLE_SERVICES_JSON"
+        "GOOGLE_SERVICES_JSON": "./google-services.json"
       }
     },
     "production": {
@@ -21,7 +21,7 @@
         "buildType": "app-bundle"
       },
       "env": {
-        "GOOGLE_SERVICES_JSON": "GOOGLE_SERVICES_JSON"
+        "GOOGLE_SERVICES_JSON": "./google-services.json"
       }
     }
   },
