@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image, Linking, Switch } from 'react-native';
 import { useTheme } from './ThemeContext';
+import { showInterstitialAdWithCallback } from './AdManager';
+
 
 const Home = ({ navigation }) => {
   const { isDarkMode, toggleDarkMode } = useTheme();
@@ -35,12 +37,17 @@ const Home = ({ navigation }) => {
   }, [showDisclaimer]);
 
   const handleButtonPress = (level) => {
-    if (level === 'Explore') {
-      navigation.navigate('ExploreMore');
-    } else {
-      navigation.navigate(level);
-    }
-  };
+  if (level === 'Explore') {
+    navigation.navigate('ExploreMore');
+  } else if (level === 'Advanced') {
+    // Show ad, then navigate to Advanced
+    showInterstitialAdWithCallback(() => {
+      navigation.navigate('Advanced');
+    });
+  } else {
+    navigation.navigate(level);
+  }
+};
 
   return (
     <View style={[styles.container, isDarkMode && styles.darkContainer]}>

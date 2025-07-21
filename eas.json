@@ -1,18 +1,31 @@
 {
+  "cli": {
+    "version": ">= 3.0.0",
+    "appVersionSource": "auto"
+  },
   "build": {
     "preview": {
+      "developmentClient": false,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "GOOGLE_SERVICES_JSON": "GOOGLE_SERVICES_JSON"
+      }
+    },
+    "production": {
+      "developmentClient": false,
+      "distribution": "store",
       "android": {
         "buildType": "app-bundle"
+      },
+      "env": {
+        "GOOGLE_SERVICES_JSON": "GOOGLE_SERVICES_JSON"
       }
-    },
-    "preview2": {
-      "android": {
-        "gradleCommand": ":app:assembleRelease"
-      }
-    },
-    "preview3": {
-      "developmentClient": true
-    },
+    }
+  },
+  "submit": {
     "production": {}
   }
 }
