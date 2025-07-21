@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "519458808071",
+    "project_id": "learnlinux-403b4",
+    "storage_bucket": "learnlinux-403b4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519458808071:android:2f5c904565a49db9b525a2",
+        "android_client_info": {
+          "package_name": "com.craftedwebpro.learnlinux"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2aSSyxPrXz4noZkfd5cvJtWKh5N9AREo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

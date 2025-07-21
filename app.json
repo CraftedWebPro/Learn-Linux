@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "learn-linux",
+    "slug": "learn-linux",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/favicon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.craftedwebpro.learnlinux",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/favicon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "googleServicesFile": "./android/app/google-services.json",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-9508094092788627~1234567890"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d8038c91-d612-4e9b-a418-917f28cf7cd4"
+      }
+    }
+  }
+}
